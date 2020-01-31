@@ -1,0 +1,183 @@
+$primary-backroundcolor: #ebecf0;
+$secondary-backroundcolor: rgba(9,30,66,0.08);
+$primary-color: rgb(23, 43, 77);
+$secondary-color: #5e6c84;
+
+.board{
+    width: 272px;
+    background-color: $primary-backroundcolor;
+
+    margin: 0 4px;
+}
+
+
+// --- Add button
+
+.add-board{
+
+    background-color: hsla(0,0%,100%,.24);
+    height: auto;
+    min-height: 32px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.add-board:hover{
+    background-color: hsla(0,0%,100%,.32);
+}
+
+.add-board-link {
+    display: grid;
+    grid-template-columns: 10% auto;
+
+}
+
+.add-board-icon{
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+
+    
+
+    line-height: 28px;   
+
+    text-align: center;
+    
+    margin-left: 5px;
+
+    cursor: pointer;
+
+    color: #fff;
+}
+
+.add-board-text{
+    height: 28px;
+    padding: 4px 8px;
+    margin: -4px 0;
+    font-weight: 400;
+
+    line-height: 30px;
+
+    color: #fff;
+}
+
+
+// --- Board header
+
+.board-header{
+    
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 15%;
+
+
+    min-height: 20px;
+}
+
+.board-name-wrapper{
+    margin: 10px 8px;
+    width: 90%;
+}
+
+textarea.board-name{
+    width: 100%;
+
+    border: none;
+    background-color: transparent;
+
+    height: 28px;
+    padding: 4px 8px;
+    margin: -4px 0;
+    font-weight: 500;
+
+    overflow: hidden;
+    overflow-wrap: break-word;
+
+    cursor: pointer;
+
+    transition-property: background-color,border-color,box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+
+    line-height: 20px;
+
+    color: $secondary-color;
+}
+
+.board-menu {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 28px;   
+
+    text-align: center;
+    
+    margin: 5px;
+
+    cursor: pointer;
+
+    color: $secondary-color;
+}
+
+.board-menu:hover {
+    background-color: rgba(9,30,66,.08);
+    color: $primary-color;
+}
+
+
+textarea.board-name.is-editing,textarea.board-name:focus {
+    box-shadow: inset 0 0 0 2px #0079bf;
+    background-color: #fff;
+    color: $primary-color;
+}
+
+// --- Card board
+
+.card-board{
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    margin: 0 4px;
+    padding: 0 4px;
+
+    z-index: 1;
+}
+
+// --- Board footer
+
+.board-footer {
+    min-height: 20px;
+
+    position: relative;
+}
+
+.card-add-button{
+    display: grid;
+    grid-template-columns: 10% auto;
+    margin-bottom: 4px;
+}
+
+.add-card-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 28px;   
+
+    text-align: center;
+    
+    margin-left: 5px;
+
+    cursor: pointer;
+
+    color: $secondary-color;
+}
+
+.add-card-text {
+    height: 28px;
+    padding: 4px 8px;
+    margin: -4px 0;
+    font-weight: 500;
+
+    line-height: 30px;
+}

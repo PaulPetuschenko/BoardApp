@@ -1,0 +1,51 @@
+@use 'components/Board/Board.scss';
+@use 'components/Card/Card.scss';
+
+
+$front-stack: 'Roboto', 'Lato', 'Noto Sans', 'Ubuntu', sans-serif;
+$primary-color: #172b4d;
+$backroung-box: rgb(235, 236, 240);
+$link-color: #5e6c84;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 18px;
+    font: 100% $front-stack;
+    outline: none;
+}
+
+body {
+    background-color: rgb(210, 144, 52);;
+    
+    
+    font-size: 14px;
+    line-height: 18px;
+
+    color: $primary-color;
+    border-color: $primary-color;
+}
+
+a, a:active, a:visited{
+    color: $link-color;
+    text-decoration: none;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;    
+    overflow: hidden;
+
+    padding: 5px;
+}
+
+.rounded-box{
+    border-radius: 3px;
+}

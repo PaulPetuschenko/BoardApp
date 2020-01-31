@@ -1,0 +1,57 @@
+$cardBackground: #fff;
+
+.card {
+    overflow: hidden;
+
+    background-color: $cardBackground;
+    cursor: pointer;
+
+    display: block;
+
+    margin-bottom: 8px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+
+    max-width: 300px;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.card-text {
+    position: relative;
+    z-index: 10;
+    padding: 5px;
+}
+
+.card-text > textarea {
+    overflow: hidden;
+    display: block;
+    box-sizing: padding-box;
+    line-height: 16px;
+
+
+    border: none;
+    padding: 6px 8px 2px;
+    cursor: pointer;
+    
+    width: 100%;
+
+    min-height: 28px;
+
+    -webkit-touch-callout: auto;
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+
+textarea.card-name.is-editing, textarea.card-name:focus {
+    box-shadow: inset 0 0 0 2px #0079bf;
+}
